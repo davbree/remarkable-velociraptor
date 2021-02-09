@@ -27,9 +27,9 @@ export default class Blog extends React.Component {
                     <Link className="post-thumbnail" href={withPrefix(_.get(post, '__metadata.urlPath', null))}>
        
                       <img src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))} alt={_.get(post, 'frontmatter.thumb_image_alt', null)} />
-                                       <p>another thing</p>
+
                     </Link>
-                    )}
+                    )}                                       <p>another thing</p>
                     <header className="post-header">
                       <h2 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h2>
                       <div className="post-meta">
