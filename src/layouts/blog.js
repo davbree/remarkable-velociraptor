@@ -24,10 +24,11 @@ export default class Blog extends React.Component {
                 <article key={post_idx} className="post grid-item">
                   <div className="post-inside">
                     {_.get(post, 'frontmatter.thumb_image', null) && (
+                        <div>
                     <Link className="post-thumbnail" href={withPrefix(_.get(post, '__metadata.urlPath', null))}>
 
                       <img src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))} alt={_.get(post, 'frontmatter.thumb_image_alt', null)} />
-                                              <div><p>another thing</p>
+ 
 
                       </div>
 
