@@ -28,6 +28,7 @@ export default class Blog extends React.Component {
                         <div><p>another thing</p>
 
                       <img src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))} alt={_.get(post, 'frontmatter.thumb_image_alt', null)} />
+                      </div>
 
                     </Link>
                     )}                                       
