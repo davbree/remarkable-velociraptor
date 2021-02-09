@@ -15,6 +15,7 @@ export default class SectionPortfolio extends React.Component {
                 {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
                 <div className="block-header inner-sm">
                   {_.get(section, 'title', null) && (
+                      <div>
                   <h2 className="block-title line-top">{_.get(section, 'title', null)}</h2>
 
                   <h2 className="block-title line-top">{_.get(section, 'title', null)}</h2>
