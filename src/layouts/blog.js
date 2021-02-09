@@ -32,8 +32,7 @@ export default class Blog extends React.Component {
 </Link>
                       </div>
 
-                    )}    
-                    </div>                                   
+                    )}                                       
                     <header className="post-header">
                       <h2 className="post-title"><Link href={withPrefix(_.get(post, '__metadata.urlPath', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h2>
                       <div className="post-meta">
