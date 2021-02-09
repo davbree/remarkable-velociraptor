@@ -19,6 +19,7 @@ export default class SectionPortfolio extends React.Component {
                   <h2 className="block-title line-top">{_.get(section, 'title', null)}</h2>
 
                   <h2 className="block-title line-top">{_.get(section, 'title', null)}</h2>
+                  </div>
                   )}
                   {_.get(section, 'subtitle', null) && (
                   <p className="block-subtitle">{htmlToReact(_.get(section, 'subtitle', null))}</p>
